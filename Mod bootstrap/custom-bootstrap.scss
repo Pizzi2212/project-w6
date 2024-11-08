@@ -13,18 +13,16 @@
 // ora tutti i colori (primary, secondary etc.) sono definiti e posso utilizzarli/sovrascriverli
 
 // ora abbiamo accesso alle definizioni dei colori fondamentali di bootstrap e soprattutto alla varibile "$theme-colors", che li raggruppa in una mappa
-
 // proviamo a modificare i colori principali
 $new-primary: red;
-$new-secondary: rgb(50, 50, 220);
-$new-success: rgb(40, 200, 40);
+$new-gray: #818181;
+$new-netflixbg: #141414;
 
 // a questo punto li andiamo ad inserire in una nostra versione di "$theme-colors", che in ultimo luogo andremo a FONDERE con la vera $theme-colors
 $new-theme-colors: (
   'primary': $new-primary,
-  'secondary': $new-secondary,
-  'success': $new-success,
-  'paperino': $paperino,
+  'gray': $new-gray,
+  'netflix': $new-netflixbg,
 );
 
 // andiamo ora a modificare i breakpoints
